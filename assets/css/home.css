@@ -475,4 +475,9 @@ footer {
     #form{
         width: 80%;
     }
+
+    .novos-itens{
+        height: 48vh;
+    }
+
 }
