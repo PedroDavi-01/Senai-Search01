@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Senai</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="assets/img/SEARCH.png" alt="logo">
+        <div id="logo-div">
+            <img src="assets/img/logo.png" alt="logo" id="logo-img">
+             <button id="btn-logout">Sair</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Bem vindo ao SENAI SEARCH</h1>
+        <div id="container-section-devices">
+            <section class="box-devices">
+                <img src="assets/img/add-device.png" alt="box-device" class="box-device-btn" >
+                <h2>Novo Item</h2>
+            </section>
+            <section class="box-devices">
+                <img src="assets/img/lupa-device.png" alt="box-device" class="box-device-btn">
+                <h2>Consultar</h2>
+            </section>
+        </div>
+        <form id="form">
+            <div class="input-imagem-container">
+                <label for="imagem">Escolha uma imagem</label>
+                <input type="file" id="imagem" accept="image/*" onchange="mostrarImagem(event)" / required>
+                <img id="imagem-preview" class="imagem-preview" src="" alt="Pré-visualização da imagem" />
+                <span class="help-text">A imagem será exibida aqui após a seleção.</span>
+            </div>
+
+                <div class="inputLabel-box" >
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome" class="inputsForm" required>
+                </div>
+        
+            
+                <div class="inputLabel-box" >
+                    <label for="detalhes">Detalhes:</label>
+                    <input type="text" id="detalhes" name="detalhes" placeholder="Adicione os detalhes" required>
+                </div>
+            
+                <button type="submit">Adicionar</button>
+        </form>
+            <div id="itens-adicionados">
+                <h3>Itens adicionados</h3>
+                <div id="container-itens-novos">
+
+                </div>
+            </div>
+        </main>
+
+    <footer>
+        <div id="container-footer-principal">
+            <div class="container-box-el">
+                <div id="logo-principal">
+                    <img src="assets/img/senais.png" alt="logo">
+                  </div>
+                  <div class="logo-item">
+                    <img src="assets/img/fone-logo.png" alt="fone">
+                    <p>FONE: 0800 600 9606</p>
+                  </div>
+                  <div class="logo-item">
+                    <img src="assets/img/mail.logo.png" alt="email">
+                    <p>falecomsenaipe@pe.senai.br</p>
+                  </div>
+                  <div class="logo-item">
+                    <img src="assets/img/zap-logo.png" alt="whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=5508120114081" target="_blank">
+                        <p>08120114081 ></p>
+                    </a>
+                  </div>
+            </div>
+            <div class="container-box-el">
+                <h4>MENU</h4>
+                <a href="https://www.pe.senai.br/">HOME</a>
+                <a href="https://www.pe.senai.br/escolas/">ESCOLAS</a>
+                <a href="https://www.pe.senai.br/inovacao/">INOVAÇÃO</a>
+                <a href="https://www.pe.senai.br/noticias/">NOTÍCIAS</a>
+                <a href="https://sistemafiepe.jobs.recrut.ai/">TRABALHE CONOSCO</a>
+            </div>
+            <div class="container-box-el">
+                <H4>SOBRE NÓS</H4>
+                <a href="https://www.pe.senai.br/quem-somos/">QUEM SOMOS</a>
+                <a href="https://www.pe.senai.br/institutos/">TRABALHE CONOSCO</a>
+                <a href="https://transparencia.pe.senai.br/">TRANSPARÊNCIA</a>
+                <a href="https://sac.sistemafiepe.org.br/">SAC</a>
+                <a href="https://sge.pe.senai.br/FrameHTML/web/app/Edu/PortalDoProfessor/#/login">SOU PROFESSOR</a>
+            </div>
+        </div>
+        <div id="footer-inferior">
+            <p>&copy; 2025 SENAI PE - Todos os direitos reservados</p>
+        </div>
+    </footer>
+ 
+    <script src="assets/script/home.js"></script>
+</body>
+</html>

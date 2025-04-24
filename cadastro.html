@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Senai</title>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <form action="" id="form">
+        <h1>Cadastro</h1>
+
+    <div class="input-box">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+    </div>
+
+    <div class="input-box">
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="nao-informar">Prefiro não informar</option>
+        </select>
+
+    <div class="input-box">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+    </div>
+
+    <div class="input-box">
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000"  required>
+    </div>
+
+    <div class="input-box">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Senha" required>
+    </div>
+
+    <div class="input-box">
+        <label for="confirmar-senha">Confirmar Senha</label>
+        <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha" required>
+    </div>
+
+    <div class="input-box">
+        <button type="submit">Fazer login</button>
+    </div>
+
+   <a href="index.html">
+       <p>Voltar para login</p>
+   </a>
+</form>
+    
+<script src="assets/script/cadastro.js"></script>
+</body>
+</html>

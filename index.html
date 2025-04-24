@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Senai</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <form action="" id="form">
+        <label for="logo-upload" id="logo-label">
+            <img src="assets/img/logo.png" alt="logo" id="logo-img">
+            <input type="file" id="logo-upload" accept="image/*" style="display: none;">
+        </label>
+
+        <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+        </div>
+
+        <div class="input-box">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+        </div>
+
+        <div class="input-box">
+            <button type="submit">Fazer login</button>
+        </div>
+
+       <a href="cadastro.html">
+           <p>Cadastrar-se</p>
+       </a>
+    </form>
+    
+
+    <script src="assets/script/login.js"></script>
+</body>
+</html>

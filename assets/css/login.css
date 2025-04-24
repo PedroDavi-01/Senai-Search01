@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+/* Css do body */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald",Arial, Helvetica, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(255,98,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulário */
+form {
+    width: 320px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    animation: fadeSlide 0.8s ease forwards;
+    opacity: 0;
+}
+
+/* Logo */
+#logo-label {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#logo-label:hover {
+    transform: scale(1.05);
+}
+
+#logo-img {
+    width: 40px; 
+    height: 40px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botão */
+form button {
+    width: 100%;
+    padding: 0.7em;
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e65c00;
+}
+
+/* animação do form login */
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botão de adicionar foto */
+
+.input-imagem-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Oculta o input real */
+.input-imagem-container input[type="file"] {
+    display: none;
+}
+
+/* Estiliza o label como botão */
+.input-imagem-container label {
+    padding: 0.8em 2em;
+    background-color: #F78726;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-imagem-container label:hover {
+    background-color: #d26a0a;
+    transform: scale(1.05); 
+}
+
+.input-imagem-container .imagem-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    display: none;
+}
+
+
+.input-imagem-container .help-text {
+    font-size: 0.9em;
+    color: #888;
+}
+
+
+/* botão apagar */
+
+.button-apagar {
+    width: 30%;
+    padding: 0.2em;
+    margin: auto;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-apagar:hover {
+    background-color: rgb(255, 73, 73);
+}
+
+/* Botão ir pra cadastro */
+form a {
+    text-decoration: none;
+    color: rgb(30, 30, 255);
+}
+
+form a:hover  {
+    color: rgb(1, 1, 255);
+}

@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+}
+
+/* body e header */
+
+body {
+    width: 100%;
+    height: 100%;
+   /* background-color: rgb(226, 226, 226); */
+   background: #020024;
+   background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%, rgba(0, 29, 38, 1) 100%);
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    border-bottom: 3px solid #F78726;
+    box-shadow: 1px 1px 4px black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo-div{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+#btn-logout{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(255, 13, 13);
+    color: white;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10%;
+}
+
+#btn-logout:hover{
+    cursor: pointer;
+    background-color: rgb(230, 10, 10);
+}
+
+
+
+
+/* Main */
+
+main {
+    width: 75%;
+    height: 100%;
+    background-color: white;
+
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+main > h1 {
+    padding-top: 0.5em;
+    text-align: center;
+    color: #0A3F9B;
+
+    font-family: "Oswald" ,Arial, Helvetica, sans-serif;
+}
+
+/* Botões de serviço */
+
+#container-section-devices{
+    margin: 5em 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5.5em;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#container-section-devices h2 {
+    color: #0A3F9B;
+    font-size: 1.5em;
+    
+}
+
+.box-device-btn {
+    border: 5px solid #0A3F9B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-device-btn:hover{
+    transform: scale(1.03); 
+}
+
+
+/* Itens adicionados e adicionar de itens */
+
+/* Criador de itens */
+
+#form {
+    width: 30%;
+    height: auto;
+    background-color: #0A3F9B;
+    color: white;
+    border-radius: 5px;
+    padding: 2em;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+
+    display: none;
+}
+
+.inputLabel-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3em;
+}
+
+.inputLabel-box input {
+    width: 100%;
+    padding: 0.7em 1em;
+    border: none;
+    border-radius: 4px;
+}
+
+#form button {
+    width: 100%;
+    padding: 0.7em 1em;
+    background-color: #F78726;
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition:0.3s;
+}
+
+#form button:hover {
+    background-color: #d26a0a;
+}
+
+
+.inputLabel-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Onde os itens vão parar*/
+#itens-adicionados {
+    width: 90%;
+    background-color: rgb(223, 223, 223);
+    margin: auto;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+#itens-adicionados > h3 {
+    font-size: 1.5em;
+    padding: 0.5em;
+    color: #0A3F9B;
+    text-align: center;
+    font-family: "Oswald" ,Arial, Helvetica, sans-serif;
+}
+
+/* div dos itens novos */
+
+#container-itens-novos{
+    width: 100%;
+    margin: auto;
+    margin-top: 3em;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; 
+    justify-content: flex-start;
+
+    padding: 0 0 0 3em;
+}
+
+.novos-itens{
+    width: 30%;
+    height: 55vh;
+    background-color: white;
+
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+
+    word-wrap: break-word;
+}
+
+.novos-itens  {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.novos-itens:hover {
+    transform: scale(1.03);
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.novos-itens h4 {
+    padding: 0.5em 0 0.5em 0;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    font-size: 0.9em;
+}
+
+.novos-itens p {
+    font-family: "Jost" ,Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+/* selecionar img */
+
+.input-imagem-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+/* Estilo do input */
+.input-imagem-container input[type="file"] {
+    display: none; /* Esconde o input real */
+}
+
+/* Botão estilizado */
+.input-imagem-container label {
+    padding: 0.8em 2em;
+    background-color: #F78726; /* Cor de fundo laranja */
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.input-imagem-container label:hover {
+    background-color: #d26a0a; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Pequena animação de zoom */
+}
+
+/* Pré-visualização da imagem */
+.input-imagem-container .imagem-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Texto de ajuda para o usuário */
+.input-imagem-container .help-text {
+    font-size: 0.9em;
+    color: #888;
+}
+
+
+.novos-itens img {
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0.5em auto 0 auto;
+    object-fit: cover;
+}
+
+/* Botão de apagar */
+
+.button-apagar{
+    width: 30%;
+    padding: 0.2em;
+    margin: auto;
+
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.button-apagar:hover{
+    background-color: rgb(230, 10, 10);
+}
+
+/* Animação do form */
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#form.animate {
+    animation: fadeInSlide 0.4s ease-out forwards;
+}
+
+/* Footer */
+
+footer {
+    background-color: #FF8C27;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+#container-footer-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+.container-box-el {
+    flex: 1 1 250px;
+    margin: 20px;
+  }
+  
+.container-box-el h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+.container-box-el a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+.container-box-el a:hover {
+    color: #dbdbdb;
+  }
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+.container-box-el .logo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+.container-box-el .logo-item img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+#logo-principal img {
+    width: 230px;
+  }
+  
+.container-box-el .logo-item p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+  }
+  
+  
+  /* Rodapé Inferior */
+#footer-inferior {
+    text-align: center;
+    background-color: #df802e;
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+#footer-inferior p {
+    margin: 0;
+  }
+
+  /* Responsividade */
+
+@media (max-width: 600px) {
+
+    #container-footer-principal{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #container-itens-novos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .novos-itens{
+        width: 70%;
+    }
+
+}
