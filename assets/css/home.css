@@ -446,9 +446,15 @@ footer {
 
 @media (max-width: 600px) {
 
+    #form {
+        width: 60%;
+    }
+
+
     #container-footer-principal{
         display: flex;
         flex-direction: row;
+
     }
 
     #container-itens-novos{
@@ -462,4 +468,11 @@ footer {
         width: 70%;
     }
 
+}
+
+@media (max-width: 500px) {
+
+    #form{
+        width: 80%;
+    }
 }
