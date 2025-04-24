@@ -13,7 +13,7 @@
 /* Fundo da página */
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(255,98,0,1) 100%);
     display: flex;
     justify-content: center;
@@ -23,6 +23,7 @@ body {
 /* Formulário */
 form {
     width: 360px;
+    height: 90%;
     background-color: white;
     border-radius: 8px;
     padding: 2em;
@@ -31,6 +32,8 @@ form {
     align-items: center;
     gap: 1.5em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    margin-top: 3vh;
 
     animation: fadeSlide 0.8s ease forwards;
     opacity: 0;
